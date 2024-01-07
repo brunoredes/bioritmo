@@ -1,0 +1,67 @@
+<section class="home container">
+  <figure class="home__form__figure-container">
+    <img
+      ngSrc="assets/images/icon-hour.png"
+      width="30"
+      height="30"
+      alt="Relógio analógico de bordas amarelas e fundo branco"
+    />
+    <figcaption class="home__form__figure-container__caption">
+      Horário
+    </figcaption>
+  </figure>
+  <form class="home__form" (ngSubmit)="sendForm()" [formGroup]="trainForm">
+    <fieldset class="home__form__fieldset">
+      <legend>Qual período quer treinar?</legend>
+      <div>
+        <div>
+          <input
+            value="Morning"
+            type="radio"
+            id="morning"
+            formControlName="period"
+          />
+          <label for="morning">Manhã</label>
+        </div>
+      </div>
+      <div>
+        <label for="afternoon">
+          <input
+            value="Afternoon"
+            type="radio"
+            id="afternoon"
+            formControlName="period"
+          />
+          Tarde
+        </label>
+      </div>
+      <div>
+        <input
+          value="Evening"
+          type="radio"
+          id="evening"
+          formControlName="period"
+        />
+        <label for="evening">Noite</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div>
+        <label for="closedLocations">Exibir unidades fechadas</label>
+        <input
+          type="checkbox"
+          name="closedLocations"
+          id="closedLocations"
+          formControlName="closedLocation"
+        />
+      </div>
+      <div>
+        <span>Resultados encontrados: {{ 0 }}</span>
+      </div>
+    </fieldset>
+    <div>
+      <button>Encontrar unidade</button>
+      <button (click)="resetForm()">Limpar</button>
+    </div>
+  </form>
+</section>

@@ -65,6 +65,5 @@
       "style": "scss"
     }
   },
-  "defaultProject": "smartfit-fe",
-  "nxCloudAccessToken": "ZmJkOTBjMzctMDE4Yy00YjNmLTkyOWQtNzMxNTI3NDk1MmVlfHJlYWQtd3JpdGU="
+  "defaultProject": "smartfit-fe"
 }

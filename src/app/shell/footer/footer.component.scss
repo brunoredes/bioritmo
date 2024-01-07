@@ -1,0 +1,18 @@
+:host {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sf-dark-grey);
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+      margin: 0 auto;
+      max-width: 90%;
+    }
+    &__information {
+      display: flex;
+    }
+  }
+}

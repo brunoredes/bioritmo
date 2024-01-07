@@ -1,0 +1,17 @@
+<footer class="footer">
+  <!-- <picture class="footer__image"> -->
+  <img
+    ngSrc="assets/images/logo/logo.svg"
+    height="54"
+    width="146"
+    alt="Logotipo da Smartfit, onde 'smart' está escrito em branco, e o 'fit' em amarelo"
+    class="footer__logo"
+  />
+  <span
+    >Todos os direitos reservados -
+    <time [dateTime]="currentDate | date">{{
+      currentDate | date: 'YYYY'
+    }}</time></span
+  >
+  <!-- </picture> -->
+</footer>

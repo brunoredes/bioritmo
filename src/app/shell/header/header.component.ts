@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
+
+@Component({
+  selector: 'smartfit-fe-header',
+  standalone: true,
+  imports: [CommonModule, NgOptimizedImage],
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.scss',
+})
+export class HeaderComponent {}

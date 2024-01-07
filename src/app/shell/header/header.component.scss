@@ -1,0 +1,41 @@
+:host {
+  .header {
+    &__image {
+      padding: 2rem;
+      background-color: var(--sf-dark-grey);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__information {
+      display: flex;
+      flex-direction: column;
+    }
+    &__container {
+      padding-top: 4rem;
+    }
+    &__title {
+      font-size: 42px;
+    }
+    &__subheading {
+      font-family: 'Gotham-black';
+      font-size: 36px;
+    }
+  }
+
+  h1,
+  h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  span[role='presentation'] {
+    margin-top: 1rem;
+    width: 7rem;
+    height: 0.65rem;
+    background-color: var(--sf-dark-grey);
+  }
+  h3 {
+    font-family: 'Gotham-book', sans-serif;
+    margin-top: 1rem;
+  }
+}

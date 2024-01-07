@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@use './styles/reset.scss';
+@use './styles/variables.scss';
+@use './styles/fonts.scss';
+
+// SMACSS
+h1 {
+  color: var(--sf-dark-grey);
+  font-family: 'Gotham-black', sans-serif;
+  font-size: 24px;
+}
+
+input {
+  &[type='radio'],
+  &[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--sf-light-grey);
+    cursor: pointer;
+  }
+  &[type='radio'] {
+    border-radius: 50%;
+    &:checked {
+      background-color: var(--sf-light-grey);
+    }
+  }
+
+  &[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--sf-light-grey);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+}
